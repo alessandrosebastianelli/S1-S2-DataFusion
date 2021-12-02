@@ -37,7 +37,7 @@ class Fusion_Classifier:
 
         xa = GlobalAveragePooling2D()(xa)
 
-        xa = Dense(256)(xa)
+        xa = Dense(64)(xa)
         xa = Dropout(0.3)(xa)
 
         # Branch B
